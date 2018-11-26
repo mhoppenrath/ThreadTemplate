@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>DQ Thread Templates</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -24,31 +25,93 @@
   <div id="main-container" class="container">
     <section class='input-container'>
       <h1>Inputs</h1>
-      <div class="form-group">
-                   <label for="drivername">Driver Names</label>
-                   <input type="name" class="form-control" id="drivername" placeholder="Driver Name">
+      <div class='row'>
+          <div class="form-group col-md-3">
+                       <input type="name" class="form-control" id="drivername" placeholder="Driver Name">
+          </div>
+          <div class="form-group col-md-3">
+                       <input type="name" class="form-control" id="loadtype" placeholder="Load Type">
+          </div>
+          <div class="form-group col-md-3">
+                       <input type="name" class="form-control" id="singleDate" placeholder="Date">
+          </div>
+          <div class="form-group col-md-3">
+                       <input type="name" class="form-control" id="location" placeholder="Location">
+          </div>
       </div>
-      <div class="form-group">
-                   <label for="loadtype">Load Type</label>
-                   <input type="name" class="form-control" id="loadtype" placeholder="Load Type">
+      <div class='row'>
+          <div class="form-group col-md-3">
+                       <input type="name" class="form-control" id="company" placeholder="Company">
+          </div>
+          <div class="form-group col-md-3">
+                       <input type="name" class="form-control" id="test" placeholder="Test">
+          </div>
+          <div class="form-group col-md-3">
+                       <input type="name" class="form-control" id="recuiter" placeholder="Recuiter">
+          </div>
+          <div class="form-group col-md-3">
+                       <input type="name" class="form-control" id="singleint" placeholder="Years">
+          </div>
       </div>
-      <button type="submit" class="btn btn-default btn-lg" id="submit">Submit</button>
+      <div class='row'>
+          <div class="form-group col-md-3">
+                       <input type="name" class="form-control" id="username" placeholder="User Name">
+          </div>
+          <div class="form-group col-md-3">
+                       <input type="name" class="form-control" id="password" placeholder="password">
+          </div>
+          <div class="form-group col-md-3">
+                       <input type="name" class="form-control" id="status" placeholder="Status">
+          </div>
+          <div class="form-group col-md-3">
+                       <input type="name" class="form-control" id="phone" placeholder="Phone Number">
+          </div>
+      </div>
+    <button type="submit" class="btn btn-default btn-lg" id="submit">Submit</button>
     </section>
     <section class="template-selection">
       <h1>Templates</h1>
         <div id='template-1' class='template-container'>
           <p>
-            Lorem ipsum dolor sit amet, <span class='write-driver'></span> adipiscing elit. Integer pulvinar elementum nibh ut luctus. Nam porttitor non quam id sodales. finibus tincidunt massa vel mollis. Donec volutpat tortor non nulla mattis bibendum. Duis pretium tortor pretium dui porttitor, vitae bibendum ante rutrum. Praesent nulla nibh, lacinia venenatis sapien a, venenatis lobortis dolor. Donec est risus, feugiat sit amet pulvinar id, convallis id purus. <span id='write-driver'></span>Nullam mattis quam ut lacinia <span class='write-driver'></span>. Vivamus tincidunt elit porta tristique efficitur.<span class='write-type'></span> Duis aliquam justo vitae augue facilisis, et interdum est dictum. Duis gravida in nunc vitae rhoncus. Aenean congue quam erat, sit amet auctor nulla consectetur quis. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            I need you to answer in the affirmative to the questions below before I can clear you for dispatch. If you disagree with this question for any reason or have any questions/concerns please call me or your recruiter right away.
+
+            Do you understand you are being cleared for dispatch as an independent contractor, and as an independent contractor you are responsible for ALL expenses - including, but not limited to - fuel, transportation to and from trucks, occupational/accidental insurance and a $1,500 security deposit? Have all of your questions regarding this information been answered prior to being cleared for dispatch?
           </p>
         </div>
+        <br>
         <div id='template-2' class='template-container'>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar elementum nibh ut luctus. Nam porttitor non quam id sodales. Vivamus finibus tincidunt massa vel mollis. Donec volutpat tortor non nulla mattis bibendum. Duis pretium tortor pretium dui porttitor, vitae bibendum ante rutrum. Praesent nulla nibh, lacinia venenatis sapien a, venenatis lobortis dolor. Donec est risus, feugiat sit amet pulvinar id, convallis id purus. Nullam mattis quam ut lacinia volutpat. Vivamus tincidunt elit porta tristique efficitur. Duis aliquam justo vitae augue facilisis, et interdum est dictum. Duis gravida in nunc vitae rhoncus. Aenean congue quam erat, sit amet auctor nulla consectetur quis. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            Please create an authorization form and set the above-referenced applicant up for a Pre-Employment Drug Screen on __________.
+            <br>
+            Driver information:
+            <br>
+            <br>
+            Driver Name:  <span class='write-driver'>__________</span><br>
+            SSN or DOB:  <span class='write-SSN'>__________</span><br>
+            Company:  <span class='write-company'>__________</span><br>
+            Test(s) required:  <span class='write-test'>__________</span><br>
+            Clinic info:  <br>
+
+            I have confirmed this date and location with the applicant. If anything changes, I will let you know as soon as possible.
+
+
+            Thank you -
           </p>
         </div>
+        <br>
         <div id='template-3' class='template-container'>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar elementum nibh ut luctus. Nam porttitor non quam id sodales. Vivamus finibus tincidunt massa vel mollis. Donec volutpat tortor non nulla mattis bibendum. Duis pretium tortor pretium dui porttitor, vitae bibendum ante rutrum. Praesent nulla nibh, lacinia venenatis sapien a, venenatis lobortis dolor. Donec est risus, feugiat sit amet pulvinar id, convallis id purus. Nullam mattis quam ut lacinia volutpat. Vivamus tincidunt elit porta tristique efficitur. Duis aliquam justo vitae augue facilisis, et interdum est dictum. Duis gravida in nunc vitae rhoncus. Aenean congue quam erat, sit amet auctor nulla consectetur quis. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            We have contracted with the above-referenced contractor as a <span class='write-type'>__________</span> contract driver in <span class='write-type'>__________</span>.<br>
+            Contractor was referred by <span class='write-refferal'>__________</span>.<br>
+            Contractor has <span class='write-years'>__________</span> no drive-away experience.<br>
+            Recruiter was <span class='write-recuiter'>__________</span>.<br>
+            Contractor stated he/she understands what it means to be an independent contract driver.<br>
+            Additional notes about contractor: <br>
+            <br>
+            <br>
+            Contractor has been cleared for dispatch.<br>
+            Thank you <br>
+            Sarah L. Noble
           </p>
         </div>
     </section>
