@@ -18,7 +18,6 @@ $(document).ready(function() {
           var ssn = $("#SSN").val().trim();
           var doc = $("#doc").val().trim();
           event.preventDefault();
-          console.log(dq);
           $('.write-driver').text(driverName)
           $('.write-dq').text(dq)
           $('.write-type').text(loadType)
@@ -33,6 +32,7 @@ $(document).ready(function() {
           $('.write-password').text(password)
           $('.write-status').text(status)
           $('.write-phone').text(phone)
-          $('.write-doc').text(doc)
+
+          
     })
 })
