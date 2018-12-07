@@ -4,6 +4,7 @@ $(document).ready(function() {
           console.log("clicked");
           var driverName = $("#drivername").val().trim();
           var loadType = $("#loadtype").val().trim();
+          var dq = $("#dq").val().trim();
           var recuiter = $("#recuiter").val().trim();
           var singleint = $("#singleint").val().trim();
           var singleDate = $("#singleDate").val().trim();
@@ -14,13 +15,17 @@ $(document).ready(function() {
           var password = $("#password").val().trim();
           var status = $("#status").val().trim();
           var phone = $("#phone").val().trim();
+          var ssn = $("#SSN").val().trim();
+          var doc = $("#doc").val().trim();
           event.preventDefault();
-          console.log(driverName);
+          console.log(dq);
           $('.write-driver').text(driverName)
+          $('.write-dq').text(dq)
           $('.write-type').text(loadType)
           $('.write-recuiter').text(recuiter)
           $('.write-singleint').text(singleint)
           $('.write-singleDate').text(singleDate)
+          $('.write-SSN').text(ssn)
           $('.write-location').text(location)
           $('.write-company').text(company)
           $('.write-test').text(test)
@@ -28,5 +33,6 @@ $(document).ready(function() {
           $('.write-password').text(password)
           $('.write-status').text(status)
           $('.write-phone').text(phone)
+          $('.write-doc').text(doc)
     })
 })
